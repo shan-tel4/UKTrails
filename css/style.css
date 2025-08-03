@@ -10,6 +10,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.9;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
     position: relative;
   }
 /*   
@@ -226,4 +228,24 @@ body {
     max-width: 700px;   /* bring adventure text in */
     margin: 0 auto;
   }
+
+
+  footer ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+
+
+  footer ul li a:hover {
+    text-decoration: none;
+    color: rgb(255, 132, 0);
+  }
+
+  footer ul {
+    list-style-type: none;
+    font-family: sans-serif;
+    font-weight: bolder;
+    gap: 2px;
+  }
   
+

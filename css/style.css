@@ -53,7 +53,10 @@ body {
 }
 
 .hamburger {
-    display: none;
+    right: -10px !important; /* added this to push the hamburger over a bit to line up with the content below it */
+    @media all and (min-width: 992px) { /* mobile first, hide it on desktop */
+      display: none;
+    }
   }
   
   /* Navigation list desktop */
@@ -76,17 +79,21 @@ body {
     color: rgb(255, 132, 0);
   }
 
-  .tagline {
+.tagline {
   position: relative;
   z-index: 1;
-  }
+  height: calc(100% - 93px); /* 93px is the height of the <header> - ask chatgpt what this code is doing to understand */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 .tagline h1 {
   text-align: center;
   font-size: 40px;
   color: white;
-  margin-top: 200px;
+  /* margin-top: 200px; */ /* naughty code, see above code on tagline class to see how we center this text within the header section */
   text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
   font-style: italic;
 }
@@ -149,7 +156,10 @@ body {
 
   /* Two columns section */
   #twocolumns-section {
-    padding: 100px 0px;
+    padding: 50px 30px; /* mobile */
+    @media all and (min-width: 992px) { /* desktop */
+      padding: 100px 0px;
+    }
   }
   .second-col-pt {
     padding-top: 80px;
@@ -169,10 +179,16 @@ body {
     background-image: url('../images/sunset.jpg');
   }
   .inner-content {
-    padding-right: 120px;
+    padding-right: 0px; /* remove the padding right for mobile */
+    @media all and (min-width: 992px) {
+      padding-right: 120px; /* padding-right for desktop devices only */
+    }
   }
   .inner-content_secondcol {
-    padding-left: 120px;
+    padding-left: 0px;
+    @media all and (min-width: 992px) {
+      padding-left: 120px;
+    }
   }
   .btn-primary {
     background-color: #FEE29C;
@@ -246,6 +262,11 @@ body {
     font-family: sans-serif;
     font-weight: bolder;
     gap: 2px;
+    padding-left: 0; /* always add this to remove padding we don't want for all devices */
+    text-align: center; /* center the ul for mobile devices */
+    @media all and (min-width: 992px) {
+      text-align: left; /* remove center for desktop devices */
+    }
   }
 
 

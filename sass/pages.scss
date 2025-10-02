@@ -1,0 +1,67 @@
+/* Two columns section */
+  #twocolumns-section {
+    padding: 50px 30px; /* mobile */
+    @media all and (min-width: 992px) { /* desktop */
+      padding: 100px 0px;
+    }
+  }
+  .second-col-pt {
+    padding-top: 80px;
+  }
+  .bg-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 100%;
+  }
+  .bg-image-1 {
+    background-image: url('../images/people\ hiking.jpg')
+  }
+  .bg-image-2 {
+    background-image: url('../images/hiker.jpg');
+  }
+  .inner-content {
+    padding-right: 0px; /* remove the padding right for mobile */
+    @media all and (min-width: 992px) {
+      padding-right: 120px; /* padding-right for desktop devices only */
+    }
+  }
+  .inner-content_secondcol {
+    padding-left: 0px;
+    @media all and (min-width: 992px) {
+      padding-left: 120px;
+    }
+  }
+
+  .adventure-section {
+    background-image: url('../images/trail.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .adventure-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+  }
+  
+  .adventure-section .content {
+    position: relative;
+    z-index: 2;
+  }
+  
+
+  .centered-narrow {   
+    max-width: 700px;   /* bring adventure text in */
+    margin: 0 auto;
+  }

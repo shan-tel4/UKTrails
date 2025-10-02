@@ -1,0 +1,36 @@
+footer ul li a {
+    text-decoration: none;
+    color: #000;
+  
+  }
+
+
+  footer ul li a:hover {
+    text-decoration: none;
+    color: #4D4021;
+  }
+
+  footer ul {
+    font-family: sans-serif;
+    font-weight: bolder;
+    gap: 2px;
+    padding-left: 0; /* always add this to remove padding we don't want for all devices */
+    text-align: center; /* center the ul for mobile devices */
+    @media all and (min-width: 992px) {
+      text-align: left; /* remove center for desktop devices */
+    }
+    li {
+      list-style: none;
+    }
+  }
+
+
+  .copyright {
+    font-weight: bolder;
+    font-size: 14px;
+  }
+  
+
+.social-media {
+  font-size: 1.1rem;
+}

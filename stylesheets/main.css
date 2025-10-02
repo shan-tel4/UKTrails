@@ -1,10 +1,332 @@
+@charset "UTF-8";
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* the dark overlay */
+  z-index: 1;
+}
+
+/* BG Colours */
+.bg-green {
+  background-color: rgb(15, 70, 15);
+}
+
+.bg-pink {
+  background-color: rgb(121, 34, 109);
+}
+
+.bg-blue {
+  background-color: rgb(50, 136, 186);
+}
+
+.bg-orange {
+  background-color: rgb(207, 111, 59);
+}
+
+/* ========== Variables ========== */
+/* your green/brown accent */
+/* ========== Header (video background) ========== */
+.header-bg {
+  position: relative;
+  height: 100vh;
+  overflow: hidden; /* keep video fully clipped in section */
+}
+
+/* Full-bleed background video */
+.header-video {
+  position: absolute;
+  inset: 0; /* top/right/bottom/left: 0 */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fill without distortion */
+  z-index: 0;
+}
+
+/* Dark gradient overlay for legibility */
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.55));
+}
+
+/* Header content */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 30px;
+  position: relative;
+  z-index: 2; /* above video & overlay */
+}
+
+.logo {
+  width: 180px;
+}
+
+/* Desktop nav (inline list) */
+#navbar {
+  transition: right 0.3s ease; /* for mobile slide-out */
+}
+
+nav ul li {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+}
+nav ul li a:hover {
+  color: #d1af58;
+}
+
+/* Hamburger (Jon Suh) */
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  background-color: #fff !important;
+}
+
+.hamburger {
+  right: -10px !important; /* nudge to align with layout */
+}
+@media all and (min-width: 992px) {
+  .hamburger { /* hide on desktop */
+    display: none;
+  }
+}
+
+.tagline {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  text-align: center;
+}
+
+.tagline-2 {
+  color: #000;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+  font-style: italic;
+  margin: 0;
+}
+
+/* ========== Accessibility / Motion preferences ========== */
+/* Respect “prefers-reduced-motion”: hide video, rely on poster */
+@media (prefers-reduced-motion: reduce) {
+  .header-video {
+    display: none;
+  }
+}
+/* ========== Mobile Slide-Out Nav (≤ 991px) ========== */
+@media (max-width: 991px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    color: #fff;
+    top: 30px;
+    right: 30px;
+    z-index: 110;
+  }
+  #navbar {
+    position: fixed;
+    background: #4D4021;
+    height: 100vh;
+    width: 250px;
+    top: 0;
+    right: -250px; /* hidden by default */
+    z-index: 105;
+    padding-top: 80px;
+  }
+  #navbar ul {
+    list-style: none;
+    padding: 0 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #navbar ul li {
+    display: block;
+    text-align: left;
+  }
+  #navbar ul li a {
+    font-size: 1.4rem;
+    color: #fff;
+  }
+}
+/* ========== Utility (optional) ========== */
+/* If you want the header to snap a bit shorter on tiny heights */
+@media (max-height: 500px) and (min-width: 992px) {
+  .header-bg {
+    height: 80vh;
+  }
+}
+footer ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer ul li a:hover {
+  text-decoration: none;
+  color: #4D4021;
+}
+
+footer ul {
+  font-family: sans-serif;
+  font-weight: bolder;
+  gap: 2px;
+  padding-left: 0; /* always add this to remove padding we don't want for all devices */
+  text-align: center; /* center the ul for mobile devices */
+}
+@media all and (min-width: 992px) {
+  footer ul {
+    text-align: left; /* remove center for desktop devices */
+  }
+}
+footer ul li {
+  list-style: none;
+}
+
+.copyright {
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+.social-media {
+  font-size: 1.1rem;
+}
+
+/* Two columns section */
+#twocolumns-section {
+  padding: 50px 30px; /* mobile */
+}
+@media all and (min-width: 992px) {
+  #twocolumns-section { /* desktop */
+    padding: 100px 0px;
+  }
+}
+
+.second-col-pt {
+  padding-top: 80px;
+}
+
+.bg-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+}
+
+.bg-image-1 {
+  background-image: url("../images/people hiking.jpg");
+}
+
+.bg-image-2 {
+  background-image: url("../images/hiker.jpg");
+}
+
+.inner-content {
+  padding-right: 0px; /* remove the padding right for mobile */
+}
+@media all and (min-width: 992px) {
+  .inner-content {
+    padding-right: 120px; /* padding-right for desktop devices only */
+  }
+}
+
+.inner-content_secondcol {
+  padding-left: 0px;
+}
+@media all and (min-width: 992px) {
+  .inner-content_secondcol {
+    padding-left: 120px;
+  }
+}
+
+.adventure-section {
+  background-image: url("../images/trail.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.adventure-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.adventure-section .content {
+  position: relative;
+  z-index: 2;
+}
+
+.centered-narrow {
+  max-width: 700px; /* bring adventure text in */
+  margin: 0 auto;
+}
+
 .btn {
   color: antiquewhite;
+}
+
+.btn-primary {
+  background-color: #FEE29C;
+  border-radius: 25px;
+  color: #000;
+  padding: 10px 20px;
+  border: 0;
+}
+
+.btn-secondary {
+  background-color: #FFB8BB;
+  border-radius: 25px;
+  color: #000;
+  padding: 10px 20px;
+  border: 0;
+}
+
+.btn-primary:hover {
+  border: 0;
+  background-color: #d1af58;
+}
+
+.btn-secondary:hover {
+  border: 0;
+  background-color: #eb797f;
 }
 
 /*# sourceMappingURL=main.css.map */

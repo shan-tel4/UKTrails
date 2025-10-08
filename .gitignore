@@ -1,7 +1,4 @@
-# Ignore the videos folder at repo root
 /videos/
-
-# Ignore video files anywhere
 *.mp4
 *.mov
 *.avi

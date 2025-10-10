@@ -151,7 +151,38 @@ nav ul li a {
   }
 }
 
-/* ========== Utility (optional) ========== */
+
+/* Hero button under headline */
+.hero-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.85rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  text-decoration: none;
+  color: $white;
+  background: $brand-dark;
+  border: 2px solid $brand-dark;
+  transition: all .35s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,.25);
+
+  &:hover {
+    background: transparent;
+    color: $white;
+    border-color: $white;
+    box-shadow: 0 6px 18px rgba(0,0,0,.35);
+    transform: translateY(-2px);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    animation: heroFadeUp .9s ease-out both .35s;
+  }
+}
+
+
 /* If you want the header to snap a bit shorter on tiny heights */
 @media (max-height: 500px) and (min-width: 992px) {
   .header-bg { height: 80vh; }

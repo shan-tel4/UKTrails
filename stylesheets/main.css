@@ -98,7 +98,6 @@ nav ul li {
   margin-right: 20px;
   padding: 10px;
 }
-
 nav ul li a {
   text-decoration: none;
   color: #fff;
@@ -229,14 +228,6 @@ h1 {
 footer {
   background-color: #335940;
 }
-footer ul li a {
-  text-decoration: none;
-  color: #fff;
-}
-footer ul li a:hover {
-  text-decoration: none;
-  color: #000;
-}
 footer ul {
   font-weight: bolder;
   gap: 2px;
@@ -248,8 +239,16 @@ footer ul {
     text-align: left;
   }
 }
-footer li {
+footer ul li {
   list-style: none;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+footer ul li a:hover {
+  text-decoration: none;
+  color: #000;
 }
 
 .copyright {
@@ -313,12 +312,12 @@ footer li {
   background-image: url("../images/pexels-micah-boerma-327482-1008739.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 400px;
   width: 100%;
   position: relative;
   overflow: hidden;
 }
-
 .adventure-section::before {
   content: "";
   position: absolute;
@@ -329,7 +328,6 @@ footer li {
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
-
 .adventure-section .content {
   position: relative;
   z-index: 2;
@@ -344,14 +342,7 @@ footer li {
   color: antiquewhite;
 }
 
-.btn-primary {
-  background-color: #335940;
-  border-radius: 25px;
-  color: #fff;
-  padding: 10px 20px;
-  border: 0;
-}
-
+.btn-primary,
 .btn-secondary {
   background-color: #335940;
   border-radius: 25px;
@@ -359,12 +350,7 @@ footer li {
   padding: 10px 20px;
   border: 0;
 }
-
-.btn-primary:hover {
-  border: 0;
-  background-color: #6D997D;
-}
-
+.btn-primary:hover,
 .btn-secondary:hover {
   border: 0;
   background-color: #6D997D;

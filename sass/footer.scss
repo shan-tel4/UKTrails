@@ -1,32 +1,37 @@
 footer {
-  background-color: $green;
-	ul {
-		li {
-			a {
-				text-decoration: none;
-				color: $white;
-				&:hover {
-					text-decoration: none;
-					color: $black;
-				}
-			}
-		}
-		font-weight: bolder;
-		gap: 2px;
-		padding-left: 0;
-		text-align: center;
-		@media all and (min-width: 992px) { text-align: left;
-	}
-}
-li {
-	list-style: none;
-}
+    background-color: $green;
+
+    ul {
+        font-weight: bolder;
+        gap: 2px;
+        padding-left: 0;
+        text-align: center;
+
+        @media all and (min-width: 992px) {
+            text-align: left;
+        }
+
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: $white;
+
+                &:hover {
+                    text-decoration: none;
+                    color: $black;
+                }
+            }
+        }
+    }
 }
 .copyright {
-  font-weight: bolder;
-  font-size: 14px;
-  color: $white;
+    font-weight: bolder;
+    font-size: 14px;
+    color: $white;
 }
+
 .social-media {
-	font-size: 1.1rem;
+    font-size: 1.1rem;
 }

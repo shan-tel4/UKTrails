@@ -1,9 +1,9 @@
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
-  }
+}
 
-  .overlay {
+.overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -11,24 +11,26 @@ body {
     right: 0;
     background-color: rgba(0, 0, 0, 0.4); /* the dark overlay */
     z-index: 1;
-  }
+}
 
-
-  /* BG Colours */
+/* BG Colours */
 .bg-green {
-  background-color: rgb(15, 70, 15);
+    background-color: rgb(15, 70, 15);
 }
+
 .bg-pink {
-  background-color: rgb(121, 34, 109);
+    background-color: rgb(121, 34, 109);
 }
+
 .bg-blue {
-  background-color: rgb(50, 136, 186);
+    background-color: rgb(50, 136, 186);
 }
+
 .bg-orange {
-  background-color: rgb(207, 111, 59);
+    background-color: rgb(207, 111, 59);
 }
-  
+
 dl, ol, ul {
-  margin-bottom: 0;
-  margin-top: 0;
+    margin-bottom: 0;
+    margin-top: 0;
 }

@@ -25,29 +25,11 @@
 
 </head>
 
-<body>
+<body id="about">
   <div class="header-bg">
-    <!-- Background video -->
-    <video
-      class="header-video"
-      autoplay
-      muted
-      loop
-      playsinline
-      preload="auto"
-      poster="images/beach-fallback.jpg"
-      aria-hidden="true"
-    >
    
-  
-      <source src="videos/forest.mp4" type="video/mp4" />
-    </video>
-  
-
-    <div class="overlay"></div>
-  
     <header>
-      <img class="logo" src="images/uk trails logo design.png" alt="white logo" />
+      <a href="/"><img class="logo" src="images/uk trails logo design.png" alt="white logo" /></a>
       <button class="hamburger hamburger--slider" type="button" onclick="toggleMenu(this)">
         <span class="hamburger-box"><span class="hamburger-inner"></span></span>
       </button>
@@ -60,43 +42,39 @@
         </ul>
       </nav>
     </header>
-
-    <div class="tagline">
-      <h1><span class="eyebrow">Your UK Adventure Starts Here</h1>
-      <a href="#twocolumns-section" class="hero-btn">Learn More</a>
-    </div>    
   </div>
 
-  <!--Heading-->
-  <div class="container pt-5">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h1 class="fw-bold tagline-2">Discover The UK, One Trail At A Time</h1>
-      </div>
-    </div>
-  </div>
-
-  <!--Two Columns-->
-  <div class="container" id="twocolumns-section">
-    <div class="row align-items-center justify-content-center">
+  <!-- Intro -->
+  <div class="container twocolumns-section">
+    <div class="row align-items-lg-center">
       <!-- Left Column: Text Block -->
       <div class="col-lg-6 mb-4 mb-lg-0"><!-- Margin bottom for mobile but none for desktop -->
-        <div class="inner-content">
-          <h2 class="fw-bold">Wander Often.<br>
-            Wonder Always.</h2>
+          <h2 class="fw-bold">Discover. Explore. Repeat.</h2>
           <p class="text-muted">
-            Your next adventure starts here. Whether you're craving sun-soaked beaches, ancient cities, mountain trails, or hidden gems off the beaten path - we're here to guide you there.
+            Whether it's rugged peaks, quiet villages, or secret trails, we help you find the beauty hidden across the UK and beyond.
           </p>
-          <a href="about.html" class="btn btn-primary">Start Exploring</a>
-        </div>
+          <a href="about.html" class="btn btn-primary">Read More</a>
       </div>
-
       <!-- Right Column: Image -->
-      <div class="col-lg-4 mb-4 mb-lg-0 d-flex justify-content-center">
+      <div class="col-lg-6 mb-4 mb-lg-0 d-flex justify-content-center">
         <div class="img-fluid rounded-5 shadow bg-image bg-image-1" alt="Adventure Image"></div>
       </div>
     </div>
 
+  </div>
+
+  <div class="adventure-section text-white d-flex align-items-center justify-content-center text-center"> 
+    <div class="container my-5">
+      <div class="content px-3 centered-narrow">
+        <h2 class="fw-bold">Another adventure awaits!</h2>
+        <p class="lead">
+          Embark on your next UK adventure. From rugged coastal paths and misty mountain trails to charming historic towns and hidden countryside gems, we'll guide you every step of the way.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container twocolumns-section">
     <div class="row align-items-center second-col-pt justify-content-center">
       <!-- Right Column: Image -->
       <div class="col-lg-4 mb-4 mb-lg-0 d-flex justify-content-center">
@@ -111,17 +89,6 @@
           </p>
           <a href="about.html" class="btn btn-secondary">Start Exploring</a>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="adventure-section text-white d-flex align-items-center justify-content-center text-center"> 
-    <div class="container my-5">
-      <div class="content px-3 centered-narrow">
-        <h2 class="fw-bold">Another adventure awaits!</h2>
-        <p class="lead">
-          Embark on your next UK adventure. From rugged coastal paths and misty mountain trails to charming historic towns and hidden countryside gems, we'll guide you every step of the way.
-        </p>
       </div>
     </div>
   </div>
@@ -150,7 +117,7 @@
 
       <div class="row">
         <div class="col-12 d-flex justify-content-center copyright">
-          &copy; TravelSite
+          &copy; UKTrails
         </div>
       </div>
 

@@ -31,13 +31,24 @@ body {
   background-color: rgb(207, 111, 59);
 }
 
-/* ========== Variables ========== */
-/* your green/brown accent */
+dl, ol, ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
 /* ========== Header (video background) ========== */
 .header-bg {
   position: relative;
   height: 100vh;
   overflow: hidden; /* keep video fully clipped in section */
+}
+
+#about .header-bg {
+  height: 100%;
+  background-color: #335940;
+}
+#about .header-bg header {
+  padding-top: 0;
 }
 
 /* Full-bleed background video */
@@ -72,6 +83,7 @@ header {
 
 .logo {
   width: 180px;
+  padding-bottom: 10px;
 }
 
 /* Desktop nav (inline list) */
@@ -214,35 +226,36 @@ h1 {
     height: 80vh;
   }
 }
+footer {
+  background-color: #335940;
+}
 footer ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+footer ul li a:hover {
   text-decoration: none;
   color: #000;
 }
-
-footer ul li a:hover {
-  text-decoration: none;
-  color: #4D4021;
-}
-
 footer ul {
-  font-family: sans-serif;
   font-weight: bolder;
   gap: 2px;
-  padding-left: 0; /* always add this to remove padding we don't want for all devices */
-  text-align: center; /* center the ul for mobile devices */
+  padding-left: 0;
+  text-align: center;
 }
 @media all and (min-width: 992px) {
   footer ul {
-    text-align: left; /* remove center for desktop devices */
+    text-align: left;
   }
 }
-footer ul li {
+footer li {
   list-style: none;
 }
 
 .copyright {
   font-weight: bolder;
   font-size: 14px;
+  color: #fff;
 }
 
 .social-media {
@@ -250,17 +263,16 @@ footer ul li {
 }
 
 /* Two columns section */
-#twocolumns-section {
+.twocolumns-section {
   padding: 50px 30px; /* mobile */
 }
 @media all and (min-width: 992px) {
-  #twocolumns-section { /* desktop */
+  .twocolumns-section { /* desktop */
     padding: 100px 0px;
   }
 }
-
-.second-col-pt {
-  padding-top: 80px;
+#about .twocolumns-section .text-muted {
+  width: 70%;
 }
 
 .bg-image {

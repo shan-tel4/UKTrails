@@ -1,13 +1,23 @@
 /* Two columns section */
-  #twocolumns-section {
+  .twocolumns-section {
     padding: 50px 30px; /* mobile */
     @media all and (min-width: 992px) { /* desktop */
       padding: 100px 0px;
     }
+    #about & { // This section targets text muted only on the about page
+      .text-muted {
+        width: 70%;
+      }
+    }
   }
-  .second-col-pt {
-    padding-top: 80px;
-  }
+
+  // Alternative way of writing the above
+  // #about {
+  //   .text-muted {
+  //     width: 70%;
+  //   }
+  // }
+ 
   .bg-image {
     background-size: cover;
     background-position: center;

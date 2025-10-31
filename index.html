@@ -38,8 +38,6 @@
       poster="images/beach-fallback.jpg"
       aria-hidden="true"
     >
-   
-  
       <source src="videos/forest.mp4" type="video/mp4" />
     </video>
   
@@ -47,7 +45,7 @@
     <div class="overlay"></div>
   
     <header>
-      <img class="logo" src="images/uk trails logo design.png" alt="white logo" />
+      <a href="/"><img class="logo" src="images/uk trails logo design.png" alt="white logo" /></a>
       <button class="hamburger hamburger--slider" type="button" onclick="toggleMenu(this)">
         <span class="hamburger-box"><span class="hamburger-inner"></span></span>
       </button>
@@ -63,7 +61,7 @@
 
     <div class="tagline">
       <h1><span class="eyebrow">Your UK Adventure Starts Here</h1>
-      <a href="#twocolumns-section" class="hero-btn">Learn More</a>
+      <a href="#get-started" class="hero-btn">Learn More</a>
     </div>    
   </div>
 
@@ -77,15 +75,14 @@
   </div>
 
   <!--Two Columns-->
-  <div class="container" id="twocolumns-section">
+  <div class="container twocolumns-section" id="get-started">
     <div class="row align-items-center justify-content-center">
       <!-- Left Column: Text Block -->
       <div class="col-lg-6 mb-4 mb-lg-0"><!-- Margin bottom for mobile but none for desktop -->
         <div class="inner-content">
-          <h2 class="fw-bold">Wander Often.<br>
-            Wonder Always.</h2>
+          <h2 class="fw-bold">Seeking New Horizons</h2>
           <p class="text-muted">
-            Your next adventure starts here. Whether you're craving sun-soaked beaches, ancient cities, mountain trails, or hidden gems off the beaten path - we're here to guide you there.
+            Your next journey begins here. Whether you're seeking rugged coastlines, historic villages, moorland paths, or secret spots beyond the map, we'll guide you every step.
           </p>
           <a href="about.html" class="btn btn-primary">Start Exploring</a>
         </div>
@@ -105,9 +102,9 @@
       <!-- Left Column: Text Block -->
       <div class="col-lg-6">
         <div class="inner-content_secondcol">
-          <h2 class="fw-bold">Passionate About Travel,<br> by Discovery</h2>
+          <h2 class="fw-bold">Passionate About Paths</h2>
           <p class="text-muted">
-            We're a team of wanderers, storytellers, and explorers on a mission to make travel meaningful and memorable
+            We're a team of explorers, dreamers, and adventurers devoted to making every step unforgettable.
           </p>
           <a href="about.html" class="btn btn-secondary">Start Exploring</a>
         </div>
@@ -150,29 +147,13 @@
 
       <div class="row">
         <div class="col-12 d-flex justify-content-center copyright">
-          &copy; TravelSite
+          &copy; UKTrails
         </div>
       </div>
 
     </div>
 
   </footer>
-  
-  
 
-  <!-- JavaScript -->
-  <script>
-    const navBar = document.getElementById("navbar");
-
-    function toggleMenu(button) {
-      button.classList.toggle("is-active");
-
-      if (button.classList.contains("is-active")) {
-        navBar.style.right = "0"; 
-      } else {
-        navBar.style.right = "-250px";
-      }
-    }
-  </script>
 </body>
 </html>

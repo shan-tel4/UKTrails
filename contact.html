@@ -49,15 +49,28 @@
     <div class="row align-items-lg-center">
       <!-- Left Column: Text Block -->
       <div class="col-lg-6 mb-4 mb-lg-0"><!-- Margin bottom for mobile but none for desktop -->
-          <h2 class="fw-bold">Discover. Explore. Repeat.</h2>
+          <h2 class="fw-bold">Get In Touch</h2>
           <p class="text-muted">
-            Whether it's rugged peaks, quiet villages, or secret trails, we help you find the beauty hidden across the UK and beyond.
+            We're here to help you plan your next adventure. Whether you have a question, a suggestion, or just want to say hello, we're all ears.
           </p>
-          <a href="about.html" class="btn btn-primary">Read More</a>
       </div>
       <!-- Right Column: Image -->
       <div class="col-lg-6 mb-4 mb-lg-0 d-flex justify-content-center">
-        <div class="img-fluid rounded-5 shadow bg-image bg-image-1" alt="Adventure Image"></div>
+        <form id="contact" action="/send-mail.php" method="POST" class="w-100">
+          <div class="mb-3">
+            <label for="name" class="form-label fw-bold">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required autocomplete="name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label fw-bold">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" required autocomplete="email">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label fw-bold">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="6" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary px-4">Send Message</button>
+        </form>
       </div>
     </div>
 
@@ -70,25 +83,6 @@
         <p class="lead">
           Embark on your next UK adventure. From rugged coastal paths and misty mountain trails to charming historic towns and hidden countryside gems, we'll guide you every step of the way.
         </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container twocolumns-section">
-    <div class="row align-items-center second-col-pt justify-content-center">
-      <!-- Right Column: Image -->
-      <div class="col-lg-4 mb-4 mb-lg-0 d-flex justify-content-center">
-        <div class="img-fluid rounded-5 shadow bg-image bg-image-2" alt="Adventure Image"></div>
-      </div>
-      <!-- Left Column: Text Block -->
-      <div class="col-lg-6">
-        <div class="inner-content_secondcol">
-          <h2 class="fw-bold">Passionate About Travel,<br> by Discovery</h2>
-          <p class="text-muted">
-            We're a team of wanderers, storytellers, and explorers on a mission to make travel meaningful and memorable
-          </p>
-          <a href="about.html" class="btn btn-secondary">Start Exploring</a>
-        </div>
       </div>
     </div>
   </div>
@@ -125,5 +119,8 @@
 
   </footer>
   
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

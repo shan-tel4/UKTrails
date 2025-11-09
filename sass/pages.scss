@@ -31,6 +31,13 @@
   .bg-image-2 {
     background-image: url('../images/hiking_one_leg.jpg');
   }
+  .bg-image-about-1 {
+    background-image: url('../images/julian-hanslmaier-afyeajNGFKg-unsplash.jpg');
+    background-position: bottom;
+  }
+  .bg-image-about-2 {
+    background-image: url('../images/pexels-andyhvu-3217911.jpg');
+  }
   .inner-content {
     padding-right: 0px; /* remove the padding right for mobile */
     @media all and (min-width: 992px) {
@@ -53,7 +60,16 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-
+  }
+  .adventure-section-about {
+    background-image: url('../images/thomas-langnes-DFHbBg2fxIk-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 400px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
     &::before {
         content: "";
         position: absolute;

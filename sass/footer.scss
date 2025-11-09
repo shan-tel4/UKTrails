@@ -13,6 +13,12 @@ footer {
 
         li {
             list-style: none;
+            margin-right: 10px;
+            display: inline-block;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
 
             a {
                 text-decoration: none;

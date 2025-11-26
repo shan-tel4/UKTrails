@@ -36,12 +36,106 @@
     background-position: bottom;
   }
   .bg-image-about-2 {
-    background-image: url('../images/pexels-andyhvu-3217911.jpg');
+    background-image: url('../images/hiking_one_leg.jpg');
   }
+
+  .bg-image-1-contact {
+    background-image: url('../images/pexels-fmaderebner-238622.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 320px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 1.5rem;
+  }
+  
   .inner-content {
     padding-right: 0px; /* remove the padding right for mobile */
     @media all and (min-width: 992px) {
       padding-right: 120px; /* padding-right for desktop devices only */
+    }
+  }
+  
+  #about {
+    .contact-hero {
+      background: linear-gradient(180deg, #f8fbff 0%, #ffffff 65%);
+    }
+
+    .contact-card {
+      max-width: 1100px;
+      margin: 0 auto;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .contact-eyebrow {
+      letter-spacing: 0.18em;
+      color: #1b5b45;
+    }
+
+    .contact-image {
+    }
+
+    .contact-details {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+
+      li {
+        display: flex;
+        gap: 0.85rem;
+        align-items: center;
+        padding: 0.75rem 1rem;
+      
+
+        a,
+        span {
+          color: #1f1f1f;
+          font-weight: 600;
+          text-decoration: none;
+        }
+
+        .label {
+          font-size: 0.8rem;
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+          color: #5f6c6b;
+        }
+      }
+    }
+
+    .icon-circle {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      color: #1b5b45;
+      flex-shrink: 0;
+    }
+
+    .contact-form-card {
+      background: #f6fbff;
+      border: 1px solid rgba(18, 47, 45, 0.08);
+
+      .form-control,
+      textarea {
+        border-radius: 0.85rem;
+        border: 1px solid rgba(18, 47, 45, 0.2);
+        padding: 0.85rem 1rem;
+        box-shadow: none;
+
+        &:focus {
+          border-color: #1b5b45;
+        }
+      }
+    }
+
+    .info-pill {
+      background: #ffffff;
+      
     }
   }
   .inner-content_secondcol {
@@ -60,23 +154,9 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.25);
-      z-index: 1;
-    }
-    .content {
-      position: relative;
-      z-index: 2;
-    }
   }
   .adventure-section-about {
-    background-image: url('../images/thomas-langnes-DFHbBg2fxIk-unsplash.jpg');
+    background-image: url('../images/julian-hanslmaier-afyeajNGFKg-unsplash.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -91,9 +171,32 @@
         right: 0;
         bottom: 0;
         left: 0;
-        background-color: rgba(0, 0, 0, 0.25);
+        background-color: rgba(0, 0, 0, 0.4);
         z-index: 1;
     }
+  }
+
+    .adventure-section-contact {
+      background-image: url('../images/pexels-fmaderebner-238622.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      height: 400px;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-color: rgba(0, 0, 0, 0.4);
+          z-index: 1;
+      }
+   
+
     .content {
         position: relative;
         z-index: 2;
@@ -101,7 +204,12 @@
   }
   
 
-.centered-narrow {   
-  max-width: 700px;   /* bring adventure text in */
-  margin: 0 auto;
-}
+  .centered-narrow {   
+    max-width: 700px;   /* bring adventure text in */
+    margin: 0 auto;
+  }
+
+  .trail-heading {
+    color: #1b5b45;
+    font-weight: bold;
+  }

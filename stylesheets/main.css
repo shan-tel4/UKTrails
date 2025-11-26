@@ -183,7 +183,7 @@ h1 {
   }
   #navbar {
     position: fixed;
-    background: #4D4021;
+    background: #000;
     height: 100vh;
     width: 250px;
     top: 0;
@@ -222,7 +222,7 @@ h1 {
   color: #fff;
   background: black;
   border: 2px solid #4D4021;
-  transition: all 0.35s ease;
+  transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 .hero-btn:hover {
@@ -320,7 +320,18 @@ footer ul li a:hover {
 }
 
 .bg-image-about-2 {
-  background-image: url("../images/pexels-andyhvu-3217911.jpg");
+  background-image: url("../images/hiking_one_leg.jpg");
+}
+
+.bg-image-1-contact {
+  background-image: url("../images/pexels-fmaderebner-238622.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 320px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 1.5rem;
 }
 
 .inner-content {
@@ -330,6 +341,71 @@ footer ul li a:hover {
   .inner-content {
     padding-right: 120px; /* padding-right for desktop devices only */
   }
+}
+
+#about .contact-hero {
+  background: linear-gradient(180deg, #f8fbff 0%, #ffffff 65%);
+}
+#about .contact-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+#about .contact-eyebrow {
+  letter-spacing: 0.18em;
+  color: #1b5b45;
+}
+#about .contact-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+#about .contact-details li {
+  display: flex;
+  gap: 0.85rem;
+  align-items: center;
+  padding: 0.75rem 1rem;
+}
+#about .contact-details li a,
+#about .contact-details li span {
+  color: #1f1f1f;
+  font-weight: 600;
+  text-decoration: none;
+}
+#about .contact-details li .label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #5f6c6b;
+}
+#about .icon-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  color: #1b5b45;
+  flex-shrink: 0;
+}
+#about .contact-form-card {
+  background: #f6fbff;
+  border: 1px solid rgba(18, 47, 45, 0.08);
+}
+#about .contact-form-card .form-control,
+#about .contact-form-card textarea {
+  border-radius: 0.85rem;
+  border: 1px solid rgba(18, 47, 45, 0.2);
+  padding: 0.85rem 1rem;
+  box-shadow: none;
+}
+#about .contact-form-card .form-control:focus,
+#about .contact-form-card textarea:focus {
+  border-color: #1b5b45;
+}
+#about .info-pill {
+  background: #ffffff;
 }
 
 .inner-content_secondcol {
@@ -351,23 +427,9 @@ footer ul li a:hover {
   position: relative;
   overflow: hidden;
 }
-.adventure-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.25);
-  z-index: 1;
-}
-.adventure-section .content {
-  position: relative;
-  z-index: 2;
-}
 
 .adventure-section-about {
-  background-image: url("../images/thomas-langnes-DFHbBg2fxIk-unsplash.jpg");
+  background-image: url("../images/julian-hanslmaier-afyeajNGFKg-unsplash.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -383,10 +445,31 @@ footer ul li a:hover {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
-.adventure-section-about .content {
+
+.adventure-section-contact {
+  background-image: url("../images/pexels-fmaderebner-238622.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 400px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.adventure-section-contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.adventure-section-contact .content {
   position: relative;
   z-index: 2;
 }

@@ -156,7 +156,7 @@ h1 {
 
   #navbar {
     position: fixed;
-    background: $brown;
+    background: $black;
     height: 100vh;
     width: 250px;
     top: 0;
@@ -200,8 +200,9 @@ h1 {
   color: $white;
   background: black;
   border: 2px solid $brown;
-  transition: all .35s ease;
+  transition: all .30s ease;
   box-shadow: 0 4px 12px rgba(0,0,0,.25);
+
 
   &:hover {
     background: transparent;

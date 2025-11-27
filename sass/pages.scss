@@ -207,6 +207,8 @@
   .centered-narrow {   
     max-width: 700px;   /* bring adventure text in */
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
   }
 
   .trail-heading {

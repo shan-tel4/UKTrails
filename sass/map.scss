@@ -3,12 +3,13 @@
   height: 70vh; // adjusts with viewport
   min-height: 460px;
   width: 100%;
+  z-index: 1;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
 }
 
-/* Optional container spacing harmony with your site */
+
 #trails-map .container {
   max-width: 1100px;
 }
@@ -74,10 +75,10 @@
   }
 }
 
-/* Fancybox container tweak (optional) */
+
 .map-fancybox .fancybox-content {
-  padding: 12px 12px 16px;
-  border-radius: 12px;
+  padding: 30px 38px;
+  border-radius: 10px;
 }
 
 /* Small helper text */

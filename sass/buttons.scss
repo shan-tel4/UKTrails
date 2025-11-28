@@ -1,0 +1,17 @@
+.btn {
+    color: antiquewhite;
+}
+
+.btn-primary,
+.btn-secondary {
+    background-color: #335940;
+    border-radius: 25px;
+    color: #fff;
+    padding: 10px 20px;
+    border: 0;
+
+    &:hover {
+        border: 0;
+        background-color: #6D997D;
+    }
+}
